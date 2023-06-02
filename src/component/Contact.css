@@ -1,0 +1,108 @@
+.c{
+    height: 100vh;
+}
+
+
+.c-bg{
+    width: 20px;
+    height: 100%;
+    position: absolute;
+}
+
+.c-wrapper{
+    padding: 50px;
+    display: flex;
+}
+
+.c-left{
+    flex: 1;
+}
+
+.c-right{
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    flex-direction: column;
+}
+
+
+.c-title{
+    font-size: 50px;
+    width: 80%;
+    text-align: center;
+    transition: 0.5s;
+    animation: move 15s ease-in-out infinite alternate;
+}
+.c-title:hover{
+    border-bottom: solid 2px;
+    width: 330px;
+}
+
+.c-info-item{
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+    font-weight: 300;
+    width: 70%;
+}
+
+.c-icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+form{
+    margin-top: 20px;
+
+}
+
+input{
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 10px 0px ;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+textarea{
+    width: 285px;
+    margin: 20px 0px ;
+    font-size: 14px;
+    padding-left: 50px;
+    
+}
+
+.bt{
+    margin-right: 255px;
+    border: none;
+    padding: 8px;
+    background-color: green;
+    color: azure;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 1s;
+    border-radius: 5px;
+}
+.bt:hover{
+    background-color: rgb(59, 121, 238);
+}
+
+
+
+@media screen and (max-width: 480px){
+    .c-wrapper{
+        flex-direction: column;
+
+    }
+    .i-left-wrapper{
+        padding: 10px;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
+    
